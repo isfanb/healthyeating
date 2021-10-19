@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 5em auto;
+}
+
+header {
+    margin: 2em 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header h3 {
+    font-weight: 200;
+}
+
+.sty-main {
+    display: grid;
+    grid-template-areas: 
+    'top-right top-midle top-left'
+    'midle-left top-midle midle-right'
+    'midle-left bottom-midle midle-right'
+    'bottom-right bottom-midle bottom-left'
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.sty-main > * {
+    min-height: 250px;
+}
+
+.sty-title {
+    margin-bottom: 1em;
+}
+
+.sty-item-a {
+    grid-area: top-right;
+    background-color: #2CCCC4;
+    padding: 2em;
+    color: #fff;
+}
+.sty-item-b {
+    grid-area: top-midle;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1a79bf9061e65720b038d3da/photo15578006347bf3c7305596.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sty-item-c {
+    grid-area: top-left;
+    background-color: #478AC9;
+    padding: 2em;
+    color: #fff;
+}
+.sty-item-d {
+    grid-area: midle-left;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/1c19f5d625dc5269965c1ffc/photo1517282009859f000ec3b26fe.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sty-item-f {
+    grid-area: midle-right;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9551ab1735805d40aea97ac9/photo1559181567c3190ca9959b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sty-item-g {
+    grid-area: bottom-right;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/260c6460c2445beab0076b45/creativeripepineappleonyellowbackgroundfruitfortropical_5320569.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sty-item-h {
+    grid-area: bottom-midle;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/c7b66b5109a25c9aa1118a73/fbdv.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sty-item-i {
+    grid-area: bottom-left;
+    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/055d1a5fbe8e5b058159c3cc/photo1557800636894a64c1696f.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 500px) {
+    .sty-main {
+        display: block;
+    }
+
+    .sty-main > * {
+        margin: 1em 0;
+    }
+}
